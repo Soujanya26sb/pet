@@ -29,10 +29,13 @@ public class User {
         private String userphone;
         private String useraddress;
 
-        @Enumerated(EnumType.STRING)
-        private Role role = Role.user;  // Default
+    @Enumerated(EnumType.STRING)
+    private Role role = Role.user;
 
-        public enum Role { user, admin }
+    public enum Role {
+        user, admin
+    }
+
 
 
 }
